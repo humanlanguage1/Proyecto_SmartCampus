@@ -979,5 +979,8 @@ body::-webkit-scrollbar-thumb{
         font-size: 15px;
         margin-bottom: 7px;
     }
+    .chatbot{
+        background-color: black;
+    }
 /*Fin Estilos Contactanos - Zonder*/
 }

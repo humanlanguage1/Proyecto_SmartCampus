@@ -1,17 +1,19 @@
 ﻿<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>ClassroomRouteFinder AR</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">    
-        <meta name="theme-color" content="#000">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#000">
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/fontello.css">
     <script src="js/jquery.js"></script>
-
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166082930-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-166082930-1');
@@ -19,36 +21,38 @@
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
+
 <body>
     <header id="header">
         <div class="container">
             <div class="logo">
                 <a href="#home">
-                <img src="img/LogoGrupo.png" class="inicio">
+                    <img src="img/LogoGrupo.png" class="inicio">
                 </a>
             </div>
             <input type="checkbox" id="btn-menu" onclick="control()">
             <div class="lbl-menu">
                 <label for="btn-menu">
-                <span class="icon-menu" id="linea"></span>
-                <span class="icon-equis" id="equis"></span>
+                    <span class="icon-menu" id="linea"></span>
+                    <span class="icon-equis" id="equis"></span>
                 </label>
             </div>
             <nav id="transition-nav" class="menu">
                 <a class="menu-selected active" onclick="cerrar()" href="#home">Inicio</a>
                 <a class="menu-selected" onclick="cerrar()" href="#servicios">Tecnologías</a>
                 <a class="menu-selected" onclick="cerrar()" href="#contacto">Sugerencias</a>
+                <a class="menu-selected" onclick="cerrar()" href="#Guias">Guias</a>
                 <a class="menu-selected" onclick="cerrar()" href="#clientes">Tutorial</a>
-                
+
 
                 <a class="redesociales" href="#" target="blank">
-                <img src="https://zonder.pe/img/facebook.png" ali alt="facebook">
+                    <img src="https://zonder.pe/img/facebook.png" ali alt="facebook">
                 </a>
                 <a class="redesociales" href="#" target="blank">
-                <img src="https://zonder.pe/img/instagram.png" alt="instagram">
+                    <img src="https://zonder.pe/img/instagram.png" alt="instagram">
                 </a>
                 <a class="redesociales" href="#" target="blank">
-                <img src="https://zonder.pe/img/wsp.png" alt="WhatsApp">
+                    <img src="https://zonder.pe/img/wsp.png" alt="WhatsApp">
                 </a>
             </nav>
         </div>
@@ -56,15 +60,15 @@
 
 
     <script>
-        $(document).on('click', 'nav a', function(){
+        $(document).on('click', 'nav a', function () {
             $(this).addClass('active').siblings().removeClass('active')
         })
     </script>
     <script>
-        function cerrar(){
-            var chb =document.getElementById('btn-menu');
-            if(chb.checked){
-                $("#btn-menu").prop('checked', false); 
+        function cerrar() {
+            var chb = document.getElementById('btn-menu');
+            if (chb.checked) {
+                $("#btn-menu").prop('checked', false);
             }
         }
     </script>
@@ -74,11 +78,11 @@
         <input type="radio" name="slider" id="i1" checked>
         <input type="radio" name="slider" id="i2">
         <input type="radio" name="slider" id="i3">
-            <div class="lbl-slider">
+        <div class="lbl-slider">
             <label for="i1" class="l-slider1"></label>
             <label for="i2" class="l-slider2"></label>
             <label for="i3" class="l-slider3"></label>
-            </div>
+        </div>
 
         <div class="portada">
             <div class="capa">
@@ -114,35 +118,35 @@
         <div class="contenido">
             <div class="box">
                 <figure>
-                <img src="img/App.png" alt="">
+                    <img src="img/App.png" alt="">
                     <div class="info">
-                    <h2>WEB</h2>
-                    <p><b>Azure App Service</b><br>
-                    </p>
+                        <h2>WEB</h2>
+                        <p><b>Azure App Service</b><br>
+                        </p>
                     </div>
-                <a href="https://docs.microsoft.com/en-us/azure/app-service/">Ver más</a>
+                    <a href="https://docs.microsoft.com/en-us/azure/app-service/">Ver más</a>
                 </figure>
             </div>
             <div class="box">
                 <figure>
-                <img src="img/Anchor.png" alt="">
-                <div class="info">
-                <h2>APP</h2>
-                <p><b>Azure Spatial Anchor</b><br>
-                </p>
-                </div>
-                <a href="https://docs.microsoft.com/en-us/azure/spatial-anchors/overview">Ver más</a>
+                    <img src="img/Anchor.png" alt="">
+                    <div class="info">
+                        <h2>APP</h2>
+                        <p><b>Azure Spatial Anchor</b><br>
+                        </p>
+                    </div>
+                    <a href="https://docs.microsoft.com/en-us/azure/spatial-anchors/overview">Ver más</a>
                 </figure>
             </div>
             <div class="box">
                 <figure>
-                <img src="img/Object.png" alt="">
-                <div class="info">
-                <h2>AR</h2>
-                <p><b style="font-size: 16px;">Azure Object Anchor</b><br>
-                </p>
-                </div>
-                <a href="https://docs.microsoft.com/en-us/azure/object-anchors/overview">Ver más</a>
+                    <img src="img/Object.png" alt="">
+                    <div class="info">
+                        <h2>AR</h2>
+                        <p><b style="font-size: 16px;">Azure Object Anchor</b><br>
+                        </p>
+                    </div>
+                    <a href="https://docs.microsoft.com/en-us/azure/object-anchors/overview">Ver más</a>
                 </figure>
             </div>
             <div class="box-cel">
@@ -151,11 +155,11 @@
                 </figure>
                 <figure>
                     <div class="info-cel">
-                    <h2>WEB</h2>
-                    <p><b>Azure App Service</b><br>
-                    </p>
+                        <h2>WEB</h2>
+                        <p><b>Azure App Service</b><br>
+                        </p>
                     </div>
-                <a href="https://docs.microsoft.com/en-us/azure/app-service/">Ver más</a>
+                    <a href="https://docs.microsoft.com/en-us/azure/app-service/">Ver más</a>
                 </figure>
             </div>
             <div class="box-cel">
@@ -164,11 +168,11 @@
                 </figure>
                 <figure>
                     <div class="info-cel">
-                    <h2>APP</h2>
-                <p><b>Azure Spatial Anchor</b><br>
-                </p>
-                </div>
-                <a href="https://docs.microsoft.com/en-us/azure/spatial-anchors/overview">Ver más</a>
+                        <h2>APP</h2>
+                        <p><b>Azure Spatial Anchor</b><br>
+                        </p>
+                    </div>
+                    <a href="https://docs.microsoft.com/en-us/azure/spatial-anchors/overview">Ver más</a>
                 </figure>
             </div>
             <div class="box-cel">
@@ -177,11 +181,11 @@
                 </figure>
                 <figure>
                     <div class="info-cel">
-                    <h2>AR</h2>
-                <p><b style="font-size: 16px;">Azure Object Anchor</b><br>
-                </p>
-                </div>
-                <a href="https://docs.microsoft.com/en-us/azure/object-anchors/overview">Ver más</a>
+                        <h2>AR</h2>
+                        <p><b style="font-size: 16px;">Azure Object Anchor</b><br>
+                        </p>
+                    </div>
+                    <a href="https://docs.microsoft.com/en-us/azure/object-anchors/overview">Ver más</a>
                 </figure>
             </div>
         </div>
@@ -192,63 +196,118 @@
     <div id="contacto">
         <div class="contenedor">
 
-            <div class="info-contacto">
-                <h2>Cuéntanos</h2>
-                <div class="contacto-num">
-                    <p>923520768</p>
-                    <p><a class="__cf_email__">italo_toribio@usmp.pe</a></p>
-                    <p><a class="__cf_email__">diego_linares3@usmp.pe</a></p>
-                </div>
-                <div class="info-contacto-cel">
-                </div>
+            <div class="formulario">
+
+                <form id="formulario" action="/Home/sugerenciasDb">
+
+
+                    <label for="sug">Sugerencias</label>
+                    <textarea name="sug" id="sug" class="form-control" rows="10" cols="50" required></textarea>
+
+                    <input type="submit" value="Enviar" name="enviar" id="enviar">
+                </form>
+
             </div>
 
+
             <div class="formulario">
-                <form id="formulario">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" class="form-control" required>
-                    <label for="nombre">Apellidos</label>
-                    <input type="text" name="nombre" id="nombre" class="form-control" required>
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" name="email" id="email" class="form-control" required>
-                    <label for="email">Celular</label>
-                    <input type="number" name="celular" id="celular" class="form-control" required>
-                    
+                <form id="formulario" action="/Home/Contactar">
 
-                    
+                    <label for="nom">Nombres</label>
+                    <input type="text" name="nomb" class="form-control" required>
+                    <label for="ape">Apellidos</label>
+                    <input type="text" name="apell"  class="form-control" required>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="correo" name="correo" class="form-control" required>
+                    <label for="cel">Celular</label>
+                    <input type="number" name="celu" class="form-control" required>
 
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" class="form-control" required></textarea>
-                    <input type="submit" value="enviar" name="enviar" id="enviar">
+
+                    <label for="msj">Mensaje</label>
+                    <textarea name="mensj" class="form-control" required></textarea>
+                    <input type="submit" value="Enviar" name="enviar" id="enviar">
                 </form>
             </div>
 
         </div>
     </div>
 
-
-    <div id="clientes">
-        <div class="clientes">
-            <div class="grupo1-log">
-                <div class="log-grand">
+    <div id="Guias"> 
+        <div id="contacto">
+            <h1 style = "color: #eee;">Guias de contenido</h1>
+            <div class="abs-center">
+                 <div class="text-center">
                     <figure>
-                    <img src="img/t.png" alt="">
+                    <img src="img/docicon.png"  alt="">
                     </figure>
                 </div>
-                <div class="mas-log">
-                <div>
-                <figure>
-                <img src="img/marcus.png" alt="">
-                </figure>
-                <figure>
-                    <div>
-        <iframe src='https://webchat.botframework.com/embed/IATSBotEh?s=iKxZirMP5fc.LUzScRVgdb66juivM1_Uamb_s74G-voeFKwG2GjDGss'  style='min-width: 400px; width: 75%; min-height: 350px;'></iframe>
+                <div style = "color: #eee;" class="text-center"> 
+                    GUIAS DESCARGAR
+                </div>
+                <a href="img/Guia FAQ Bot.docx" download="Guia FQA Bot">
+                ---Guia QnAMarket---
+                </a>
+            </div>
+            
+
+        </div>
     </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/header.js"></script>
+
+
+
+
+    <section style="background-color: black">
+    <div  style='min-width: 400px; width: 100%;height:50%; min-height: 500px;margin-left: 25%;' id="webchat" role="main"></div>
+    <script>
+
+        // Set  the CSS rules.
+        const styleSet = window.WebChat.createStyleSet({
+            bubbleBackground: 'rgba(219, 224, 224, .1)',
+            bubbleFromUserBackground: 'rgba(3, 222, 252 , .1)',
+            rootHeight: '10%',
+            rootWidth: '50%',
+            backgroundColor: 'white'
+        });
+
+        // After generated, you can modify the CSS rules.
+        // Change font family and weight. 
+        styleSet.textContent = {
+            ...styleSet.textContent,
+            fontFamily: "'Comic Sans MS', 'Arial', sans-serif",
+            fontWeight: 'bold'
+        };
+
+        // Set the avatar options. 
+        const avatarOptions = {
+            botAvatarImage: 'img/buhousmp.jpg',
+            botAvatarInitials: 'BOT',
+            userAvatarImage: 'img/perfiling.jpg',
+            userAvatarInitials: 'AL'
+        };
+
+        window.WebChat.renderWebChat({
+            directLine: window.WebChat.createDirectLine({
+                token: 'ew0KICAiYWxnIjogIlJTMjU2IiwNCiAgImtpZCI6ICJlTG1Ja0JEQXdMZHF1cG5EZGVhenJab3RZMzAiLA0KICAieDV0IjogImVMbUlrQkRBd0xkcXVwbkRkZWF6clpvdFkzMCIsDQogICJ0eXAiOiAiSldUIg0KfQ.ew0KICAiYm90IjogIkNsYXNzeUJvdF8iLA0KICAic2l0ZSI6ICJ4Nno2OU5KTV9FVSIsDQogICJjb252IjogIjZlaHNmUVFTV0VlRjRYQkpDVGZ2M1ItbyIsDQogICJuYmYiOiAxNjMxODIyMzU1LA0KICAiZXhwIjogMTYzMTgyNTk1NSwNCiAgImlzcyI6ICJodHRwczovL2RpcmVjdGxpbmUuYm90ZnJhbWV3b3JrLmNvbS8iLA0KICAiYXVkIjogImh0dHBzOi8vZGlyZWN0bGluZS5ib3RmcmFtZXdvcmsuY29tLyINCn0.HC47luDaqYDy1YV7svRxFLVJ3leGtnHH_iQT-0_Tm1gW486NVjoZWljR3fYVgMpCe1xLtHgbegBDtXDc5DuX1X-NgiSJgR1RTqVo_tofK1twRysDZ0jjlMEoVZKlqww65JmOHKSERn-TApeqsWpJlZpEqN3yTd8t4rURLKjIDBLCUxwojawe5iz8NFA44-8Idgf_4BOJYvlCe-sa91ngWr56NVF1nrtTM_Qbv0-uiV-huvk1Aja0ISPyQs3AROEk2ZoiNMQ5YJgRjjGbjEBRJEWhAx_sKD1j8Y-Vf9KGSiuCArzhvHy1lDSMcE574a5hHvLMFsnXSbz0kd4gtl9E-A'
+            }),
+            styleSet,
+            styleOptions: avatarOptions
+        }, document.getElementById('webchat'));
+
+    </script>
+    </section>
+    
+
+    <div style="background-color: black;">Hola</div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/CAPTCHA.js"></script>
     <script src="js/closemenu.js"></script>
 </body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0548'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
+<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }), _trfd.push({ 'ap': 'cpsh' }, { 'server': 'p3plcpnl0548' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+
+</html>
